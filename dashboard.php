@@ -1,6 +1,6 @@
 <?php
 require 'connect.php';
-$result = $conn->query("SELECT * FROM detections ORDER BY id DESC");
+$result = $conn->query("SELECT * FROM detections");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,10 +19,10 @@ $result = $conn->query("SELECT * FROM detections ORDER BY id DESC");
     <table style="margin: 0 auto; border-collapse: collapse;">
         <thead>
             <tr>
-                <th style="border: 1px solid black; padding: 10px;">#</th>
-                <th style="border: 1px solid black; padding: 10px;">Distance (cm)</th>
-                <th style="border: 1px solid black; padding: 10px;">Detected At</th>
-                <th style="border: 1px solid black; padding: 10px;">LED Active</th>
+                <th style="border: 1px solid black; padding: 10px;">id</th>
+                <th style="border: 1px solid black; padding: 10px;">distance_detected</th>
+                <th style="border: 1px solid black; padding: 10px;">Date</th>
+                <th style="border: 1px solid black; padding: 10px;">led_status</th>
             </tr>
         </thead>
         <tbody>
