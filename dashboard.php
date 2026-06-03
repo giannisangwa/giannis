@@ -29,9 +29,9 @@ $result = $conn->query("SELECT * FROM detections ORDER BY id DESC");
             <?php while ($row = $result->fetch_assoc()): ?>
             <tr>
                 <td style="border: 1px solid black; padding: 10px;"><?= $row['id'] ?></td>
-                <td style="border: 1px solid black; padding: 10px;"><?= $row['distance'] ?></td>
-                <td style="border: 1px solid black; padding: 10px;"><?= $row['detected_at'] ?></td>
-                <td style="border: 1px solid black; padding: 10px;"><?= $row['led_active'] ?></td>
+                <td style="border: 1px solid black; padding: 10px;"><?= $row['distance_detected'] ?></td>
+                <td style="border: 1px solid black; padding: 10px;"><?= $row['date'] ?></td>
+                <td style="border: 1px solid black; padding: 10px;"><?= $row['led_status'] ?></td>
             </tr>
             <?php endwhile; ?>
         </tbody>
